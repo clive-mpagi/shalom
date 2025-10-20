@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="UCANDEV helps businesses and organizations grow globally by building fast, secure, and modern websites.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://ucandev.com/">
+  <title>UCANDEV | Web Design & Development</title>
+  <style>
+
+    /* GENERAL STYLES */
+    body { margin:0; font-family:Arial, sans-serif; }
+    a { text-decoration:none; transition:0.3s; }
+    img { max-width:100%; height:auto; display:block; }
+
+    /* HEADER / NAVIGATION */
+    header { background-color:#f4f4f4; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+    nav { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:auto; padding:10px 20px; }
+    .nav-links { display:flex; gap:20px; }
+    .nav-links a { color:#333; font-weight:bold; }
+    .nav-links a:hover { color:#28a745; }
+    .contact-btn { background-color:#28a745; color:white; padding:10px 20px; border-radius:25px; font-weight:bold; }
+    .contact-btn:hover { background-color:#218838; }
+    .logo { cursor:pointer; border-radius:5px; }
+
+     /* HAMBURGER MENU */
+    .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+    .hamburger div { width:25px; height:3px; background-color:#333; }
+    @media (max-width:768px){
+      .nav-links { display:none; flex-direction:column; background:#f4f4f4; position:absolute; top:60px; left:0; width:100%; padding:10px 0; }
+      .nav-links.active { display:flex; }
+      .hamburger { display:flex; }
+    }
+
+    /* FOOTER */
+    footer { background-color:#222; color:white; text-align:center; padding:30px 20px; }
+    footer a { color:white; margin:0 10px; }
+    footer a:hover { color:#28a745; }
+
+    /* TAGLINE UNDER NAV */
+    .tagline { text-align:right; margin:10px 0 0; font-size:20px; color:#4aea0a; }
+
+    .logo {
+    width: 60px;  /* Change this to make it bigger or smaller */
+    height: auto;  /* Keeps proportions */
+}
+
+    
+  </style>
+  </head>
+  <body>
+     <!-- HEADER -->
+  <header>
+    <nav>
+      <!-- Left Contact Button -->
+      <a href="contact.html" class="contact-btn">Contact</a>
+
+      <!-- Center Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+      </div>
+
+      <!-- Right Logo -->
+      <img src="imgs/logo.png" alt="UCANDEV Logo" class="logo" onclick="window.location.href='index.html'">
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <p class="tagline">We Can Develop Your Dream</p>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (About Page) -->
+<section style="background-color:#e8f5e9; text-align:center; padding:80px 20px;">
+  
+  <!-- Centered Laptop Image -->
+  <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Laptop Image UCANDEV" loading="lazy" 
+       style="border-radius:15px; width:250px; height:auto; display:block; margin:0 auto;">
+  
+  <!-- Heading -->
+  <h1 style="font-size:32px; margin:25px 0 10px; color:#1b5e20;">About UCANDEV.COM</h1>
+  
+  <!-- Paragraph -->
+  <p style="max-width:600px; margin:auto; color:#333; line-height:1.6;">
+    At UCANDEV, we focus on building clean, fast, and professional websites that help individuals, businesses, and organizations grow online. 
+    Our goal is to create simple and powerful digital experiences that truly make an impact.
+  </p>
+  
+  <!-- Button linking to Contact Page -->
+  <a href="contact.html" 
+     style="display:inline-block; margin-top:25px; background-color:#28a745; color:white; 
+            padding:12px 30px; border-radius:30px; text-decoration:none; font-weight:bold;"
+     onmouseover="this.style.backgroundColor='#218838'" 
+     onmouseout="this.style.backgroundColor='#28a745'">
+    Contact Me for More Info
+  </a>
+
+</section>
+
+<!-- ABOUT DETAILS SECTION -->
+<section style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; background-color:#f1f8e9; padding:80px 20px;">
+
+  <!-- Left: Image -->
+  <div style="flex:1; min-width:250px; text-align:center;">
+    <img src="imgs/clive10.jpg" alt="Clive - UCANDEV Founder" loading="lazy" 
+         style="border-radius:50%; width:250px; height:250px; object-fit:cover; display:block; margin:0 auto;">
+  </div>
+
+  <!-- Right: Content -->
+  <div style="flex:1; min-width:300px; padding:20px;">
+    <h2 style="font-size:28px; color:#1b5e20; margin-bottom:10px;">Who I Am</h2>
+    <p style="color:#333; line-height:1.6; margin-bottom:25px;">
+      I'm Clive, the founder of UCANDEV, a passionate web designer and developer dedicated to helping people and organizations create meaningful online experiences. I love crafting simple, beautiful, and fast-loading websites that truly represent the people behind them.
+    </p>
+
+    <h2 style="font-size:28px; color:#1b5e20; margin-bottom:10px;">What I Do</h2>
+    <p style="color:#333; line-height:1.6; margin-bottom:30px;">
+      I specialize in web design, front-end development, branding, and maintenance. My goal is to help businesses, startups, and individuals build a strong online identity through clean, functional, and creative designs.
+    </p>
+
+    <a href="services.html" 
+       style="display:inline-block; background-color:#28a745; color:white; padding:12px 30px; border-radius:30px; text-decoration:none; font-weight:bold;"
+       onmouseover="this.style.backgroundColor='#218838'" 
+       onmouseout="this.style.backgroundColor='#28a745'">
+      View My Services
+    </a>
+  </div>
+
+</section>
+
+<!-- MY SKILLS & EXPERIENCE SECTION WITH LAPTOP BACKGROUND -->
+<section style="
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('https://images.pexels.com/photos/4974922/pexels-photo-4974922.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+">
+
+  <!-- Section Heading -->
+  <h2 style="font-size:32px; margin-bottom:10px;">My Skills & Experience</h2>
+  <p style="max-width:600px; margin:auto; line-height:1.6; margin-bottom:50px;">
+    With a focus on speed, creativity, and user experience, I develop websites that combine powerful design and reliable performance.
+    Each project I take on helps me refine my skills in web design, development, and branding.
+  </p>
+
+  <!-- Flex container for skill boxes -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+    
+    <!-- Skill 1 -->
+    <div style="background-color:#2196f3; padding:30px; border-radius:15px; width:250px; box-shadow:0 4px 6px rgba(0,0,0,0.3);">
+      <h3 style="margin-bottom:10px;">Web Design</h3>
+      <p style="font-size:15px; line-height:1.6;">
+        I design clean, modern, and user-focused websites using HTML, CSS, and UX principles.
+      </p>
+    </div>
+    
+    <!-- Skill 2 -->
+    <div style="background-color:#ffb300; padding:30px; border-radius:15px; width:250px; box-shadow:0 4px 6px rgba(0,0,0,0.3);">
+      <h3 style="margin-bottom:10px;">Front-End Development</h3>
+      <p style="font-size:15px; line-height:1.6;">
+        I create responsive, optimized interfaces using HTML, CSS, and JavaScript for all devices.
+      </p>
+    </div>
+    
+    <!-- Skill 3 -->
+    <div style="background-color:#ff7043; padding:30px; border-radius:15px; width:250px; box-shadow:0 4px 6px rgba(0,0,0,0.3);">
+      <h3 style="margin-bottom:10px;">Branding & Identity</h3>
+      <p style="font-size:15px; line-height:1.6;">
+        I help brands express their story online through strong visuals and creative design systems.
+      </p>
+    </div>
+    
+    <!-- Skill 4 -->
+    <div style="background-color:#e53935; padding:30px; border-radius:15px; width:250px; box-shadow:0 4px 6px rgba(0,0,0,0.3);">
+      <h3 style="margin-bottom:10px;">Maintenance & Support</h3>
+      <p style="font-size:15px; line-height:1.6;">
+        I provide regular updates, backups, and performance monitoring to ensure your site stays fast and secure.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT US SECTION -->
+<section style="background-color:#dcedc8; padding:100px 20px; text-align:center;">
+
+  <!-- Section Heading -->
+  <h2 style="font-size:36px; color:#1b5e20; margin-bottom:50px;">Get in Touch</h2>
+
+  <!-- Flex container for circles -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:50px;">
+
+    <!-- Circle 1: Contact Info -->
+    <div style="background-color:#28a745; color:white; width:300px; height:300px; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+      <h3 style="margin-bottom:15px;">Contact Info</h3>
+      <p style="margin:5px 0;"><strong>Phone:</strong> +1 437-259-1521</p>
+      <p style="margin:5px 0;"><strong>Email:</strong> mpagiclive60@gmail.com</p>
+      <p style="margin:5px 0;"><strong>Location:</strong> Downtown Toronto</p>
+    </div>
+
+    <!-- Circle 2: Image + Text -->
+    <div style="background-color:#81c784; color:white; width:300px; height:300px; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+        <img src="https://images.pexels.com/photos/5997189/pexels-photo-5997189.jpeg" alt="Support team answering calls" loading="lazy" style="border-radius:50%; margin-bottom:15px; width:80px; height:80px; object-fit:cover;">
+      <p style="line-height:1.5; font-weight:bold;">
+        Call us today and I help bring your digital vision to life!  
+        Fast, friendly, and professional support awaits.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div style="margin:15px 0;">
+      <a href="https://facebook.com"> Facebook</a>
+      <a href="https://twitter.com"> Twitter</a>
+      <a href="https://instagram.com"> Instagram</a>
+      <a href="https://linkedin.com"> LinkedIn</a>
+    </div>
+    <p style="font-size:13px; color:#aaa;">© 2025 UCANDEV. All rights reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT FOR HAMBURGER MENU -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when link clicked (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+    
+  </body>
+</html>

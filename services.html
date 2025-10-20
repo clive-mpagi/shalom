@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="UCANDEV helps businesses and organizations grow globally by building fast, secure, and modern websites.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://ucandev.com/">
+
+    
+     <title>UCANDEV | Web Design & Development</title>
+
+
+
+      <style>
+
+    /* GENERAL STYLES */
+    body { margin:0; font-family:Arial, sans-serif; }
+    a { text-decoration:none; transition:0.3s; }
+    img { max-width:100%; height:auto; display:block; }
+
+    /* HEADER / NAVIGATION */
+    header { background-color:#f4f4f4; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+    nav { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:auto; padding:10px 20px; }
+    .nav-links { display:flex; gap:20px; }
+    .nav-links a { color:#333; font-weight:bold; }
+    .nav-links a:hover { color:#28a745; }
+    .contact-btn { background-color:#28a745; color:white; padding:10px 20px; border-radius:25px; font-weight:bold; }
+    .contact-btn:hover { background-color:#218838; }
+    .logo { cursor:pointer; border-radius:5px; }
+
+     /* HAMBURGER MENU */
+    .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+    .hamburger div { width:25px; height:3px; background-color:#333; }
+    @media (max-width:768px){
+      .nav-links { display:none; flex-direction:column; background:#f4f4f4; position:absolute; top:60px; left:0; width:100%; padding:10px 0; }
+      .nav-links.active { display:flex; }
+      .hamburger { display:flex; }
+    }
+
+    /* FOOTER */
+    footer { background-color:#222; color:white; text-align:center; padding:30px 20px; }
+    footer a { color:white; margin:0 10px; }
+    footer a:hover { color:#28a745; }
+
+    /* TAGLINE UNDER NAV */
+    .tagline { text-align:right; margin:10px 0 0; font-size:20px; color:#4aea0a; }
+
+    .logo {
+    width: 60px;  /* Change this to make it bigger or smaller */
+    height: auto;  /* Keeps proportions */
+}
+
+    
+  </style>
+
+  </head>
+  <body>
+
+     <!-- HEADER -->
+  <header>
+    <nav>
+      <!-- Left Contact Button -->
+      <a href="contact.html" class="contact-btn">Contact</a>
+
+      <!-- Center Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+      </div>
+
+      <!-- Right Logo -->
+      <img src="imgs/logo.png" alt="UCANDEV Logo" class="logo" onclick="window.location.href='index.html'">
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <p class="tagline">We Can Develop Your Dream</p>
+  </header>
+    <main>
+
+        <!-- SERVICES PAGE HERO SECTION -->
+<section style="
+  background: linear-gradient(rgba(0,77,64,0.75), rgba(0,150,136,0.75)),
+              url('https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+">
+  <h1 style="font-size:48px; margin-bottom:20px; letter-spacing:1px;">Our Services</h1>
+  <p style="max-width:650px; margin:auto; line-height:1.6; font-size:18px;">
+    We provide creative and high-performance solutions for businesses, from web design and development to branding and support. Your project’s success is our priority.
+  </p>
+  <a href="contact.html" style="
+    display:inline-block; 
+    margin-top:30px; 
+    background-color:#4CAF50; 
+    color:white; 
+    text-decoration:none; 
+    padding:12px 25px; 
+    border-radius:30px; 
+    transition:background-color 0.3s;
+  "
+  onmouseover="this.style.backgroundColor='#2e7d32'" 
+  onmouseout="this.style.backgroundColor='#4CAF50'">
+    Contact Me Now
+  </a>
+</section>
+
+<!-- WHAT I OFFER SECTION (Updated Background) -->
+<section style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); padding:80px 20px; text-align:center;">
+  <!-- Section Heading -->
+  <h2 style="font-size:40px; color:#2e7d32; margin-bottom:20px;">What I Offer</h2>
+  <p style="max-width:700px; margin:auto; color:#444; line-height:1.6; margin-bottom:50px;">
+    I provide creative, high-performance solutions tailored to your business needs. From responsive websites to UI/UX design, every project is crafted with care and attention to detail.
+  </p>
+
+  <!-- Services Grid -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+
+    <!-- Responsive Websites -->
+    <div style="background-color:#1565c0; color:white; width:260px; border-radius:20px; padding:25px; box-shadow:0 6px 12px rgba(0,0,0,0.15); transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="font-size:22px; margin-bottom:15px;">Responsive Websites</h3>
+      <p style="font-size:14px; line-height:1.5;">Websites that look perfect on any device — desktop, tablet, or mobile — providing an excellent user experience.</p>
+    </div>
+
+    <!-- UI/UX Design -->
+    <div style="background-color:#ffeb3b; color:#444; width:260px; border-radius:20px; padding:25px; box-shadow:0 6px 12px rgba(0,0,0,0.15); transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="font-size:22px; margin-bottom:15px;">UI/UX Design</h3>
+      <p style="font-size:14px; line-height:1.5;">Creating intuitive and visually appealing interfaces to make your websites or apps easy to navigate and enjoyable to use.</p>
+    </div>
+
+    <!-- Portfolio Website -->
+    <div style="background-color:#ff9800; color:white; width:260px; border-radius:20px; padding:25px; box-shadow:0 6px 12px rgba(0,0,0,0.15); transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="font-size:22px; margin-bottom:15px;">Portfolio Website</h3>
+      <p style="font-size:14px; line-height:1.5;">Showcase your work, achievements, and skills in a beautiful, organized, and professional portfolio website.</p>
+    </div>
+
+    <!-- Business Website / Landing Pages -->
+    <div style="background-color:#f44336; color:white; width:260px; border-radius:20px; padding:25px; box-shadow:0 6px 12px rgba(0,0,0,0.15); transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="font-size:22px; margin-bottom:15px;">Business Website / Landing Pages</h3>
+      <p style="font-size:14px; line-height:1.5;">Custom websites and landing pages designed to grow your business, attract customers, and convert visitors into clients.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section style="background-color:#e0f7fa; padding:80px 20px; text-align:center;">
+  <h2 style="font-size:36px; color:#2e7d32; margin-bottom:40px;">What Our Clients Say</h2>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+
+    <!-- Testimonial 1 -->
+    <div style="
+      background-color:white;
+      border-radius:50%;
+      width:280px;
+      height:280px;
+      padding:25px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 12px rgba(0,0,0,0.15);
+      text-align:center;
+      transition:transform 0.3s;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'" 
+    onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/clive5.jpg" 
+           alt="Allan J" 
+           style="border-radius:50%; width:80px; height:80px; object-fit:cover; border:3px solid #4CAF50; margin-bottom:15px;">
+      <p style="font-size:14px; color:#444; line-height:1.5; margin-bottom:10px;">
+        "Clive transformed our website with amazing designs and responsive features. The UI/UX improvements made a huge difference in our business engagement."
+      </p>
+      <h4 style="color:#2e7d32; font-size:16px; margin-bottom:5px;">Allan J</h4>
+      <p style="font-size:12px; color:#777;">CEO, Creative Solutions</p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div style="
+      background-color:white;
+      border-radius:50%;
+      width:280px;
+      height:280px;
+      padding:25px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 12px rgba(0,0,0,0.15);
+      text-align:center;
+      transition:transform 0.3s;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'" 
+    onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/clive3.jpg" 
+           alt="Teacher Elana" 
+           style="border-radius:50%; width:80px; height:80px; object-fit:cover; border:3px solid #4CAF50; margin-bottom:15px;">
+      <p style="font-size:14px; color:#444; line-height:1.5; margin-bottom:10px;">
+        "Professional, creative, and fast! Clive delivered exactly what we envisioned for our business website."
+      </p>
+      <h4 style="color:#2e7d32; font-size:16px; margin-bottom:5px;">Teacher Elana</h4>
+      <p style="font-size:12px; color:#777;">Marketing Director, Bright Co.</p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div style="
+      background-color:white;
+      border-radius:50%;
+      width:280px;
+      height:280px;
+      padding:25px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 6px 12px rgba(0,0,0,0.15);
+      text-align:center;
+      transition:transform 0.3s;
+    "
+    onmouseover="this.style.transform='translateY(-10px)'" 
+    onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/clive6.jpg" 
+           alt="Dapane" 
+           style="border-radius:50%; width:80px; height:80px; object-fit:cover; border:3px solid #4CAF50; margin-bottom:15px;">
+      <p style="font-size:14px; color:#444; line-height:1.5; margin-bottom:10px;">
+        "Highly recommended! Clive’s attention to detail and creativity made our landing page stand out from competitors."
+      </p>
+      <h4 style="color:#2e7d32; font-size:16px; margin-bottom:5px;">Daphane</h4>
+      <p style="font-size:12px; color:#777;">Founder, StartUp Labs</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+        <!-- my contant -->
+        
+
+<section style="background-color:#dcedc8; padding:100px 20px; text-align:center;">
+
+  <!-- Section Heading -->
+  <h2 style="font-size:36px; color:#1b5e20; margin-bottom:50px;">Get in Touch</h2>
+
+  <!-- Flex container for circles -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:50px;">
+
+    <!-- Circle 1: Contact Info -->
+    <div style="background-color:#28a745; color:white; width:300px; height:300px; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+      <h3 style="margin-bottom:15px;">Contact Info</h3>
+      <p style="margin:5px 0;"><strong>Phone:</strong> +1 437-259-1521</p>
+      <p style="margin:5px 0;"><strong>Email:</strong> mpagiclive60@gmail.com</p>
+      <p style="margin:5px 0;"><strong>Location:</strong> Downtown Toronto</p>
+    </div>
+
+    <!-- Circle 2: Image + Text -->
+    <div style="background-color:#81c784; color:white; width:300px; height:300px; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+       <img src="https://images.pexels.com/photos/5997189/pexels-photo-5997189.jpeg" alt="Support team answering calls" loading="lazy" style="border-radius:50%; margin-bottom:15px; width:80px; height:80px; object-fit:cover;">
+      <p style="line-height:1.5; font-weight:bold;">
+        Call us today and I help bring your digital vision to life!  
+        Fast, friendly, and professional support awaits.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+    </main>
+
+    <!-- FOOTER -->
+  <footer>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div style="margin:15px 0;">
+      <a href="https://facebook.com"> Facebook</a>
+      <a href="https://twitter.com"> Twitter</a>
+      <a href="https://instagram.com"> Instagram</a>
+      <a href="https://linkedin.com"> LinkedIn</a>
+    </div>
+    <p style="font-size:13px; color:#aaa;">© 2025 UCANDEV. All rights reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT FOR HAMBURGER MENU -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when link clicked (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+    
+  </body>
+</html>

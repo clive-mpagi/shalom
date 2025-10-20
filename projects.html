@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+     <meta name="description" content="UCANDEV helps businesses and organizations grow globally by building fast, secure, and modern websites.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://ucandev.com/">
+  <title>UCANDEV | Web Design & Development</title>
+   
+
+
+     <style>
+
+    /* GENERAL STYLES */
+    body { margin:0; font-family:Arial, sans-serif; }
+    a { text-decoration:none; transition:0.3s; }
+    img { max-width:100%; height:auto; display:block; }
+
+    /* HEADER / NAVIGATION */
+    header { background-color:#f4f4f4; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+    nav { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:auto; padding:10px 20px; }
+    .nav-links { display:flex; gap:20px; }
+    .nav-links a { color:#333; font-weight:bold; }
+    .nav-links a:hover { color:#28a745; }
+    .contact-btn { background-color:#28a745; color:white; padding:10px 20px; border-radius:25px; font-weight:bold; }
+    .contact-btn:hover { background-color:#218838; }
+    .logo { cursor:pointer; border-radius:5px; }
+
+     /* HAMBURGER MENU */
+    .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+    .hamburger div { width:25px; height:3px; background-color:#333; }
+    @media (max-width:768px){
+      .nav-links { display:none; flex-direction:column; background:#f4f4f4; position:absolute; top:60px; left:0; width:100%; padding:10px 0; }
+      .nav-links.active { display:flex; }
+      .hamburger { display:flex; }
+    }
+
+    /* FOOTER */
+    footer { background-color:#222; color:white; text-align:center; padding:30px 20px; }
+    footer a { color:white; margin:0 10px; }
+    footer a:hover { color:#28a745; }
+
+    /* TAGLINE UNDER NAV */
+    .tagline { text-align:right; margin:10px 0 0; font-size:20px; color:#4aea0a; }
+
+    .logo {
+    width: 60px;  /* Change this to make it bigger or smaller */
+    height: auto;  /* Keeps proportions */
+}
+
+    
+  </style>
+
+
+  </head>
+  <body>
+
+    <!-- HEADER -->
+  <header>
+    <nav>
+      <!-- Left Contact Button -->
+      <a href="contact.html" class="contact-btn">Contact</a>
+
+      <!-- Center Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+      </div>
+
+      <!-- Right Logo -->
+      <img src="imgs/logo.png" alt="UCANDEV Logo" class="logo" onclick="window.location.href='index.html'">
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <p class="tagline">We Can Develop Your Dream</p>
+  </header>
+    <main>
+
+      <!-- PROJECTS HERO SECTION -->
+<section style="
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+">
+  <h1 style="font-size:48px; margin-bottom:20px;">Our Projects</h1>
+  <p style="max-width:600px; margin:auto; line-height:1.6; font-size:18px;">
+    Discover some of the exciting projects we've designed and developed, from stunning websites to impactful digital experiences.
+  </p>
+  <a href="contact.html" style="
+    display:inline-block; 
+    margin-top:30px; 
+    background-color:#28a745; 
+    color:white; 
+    text-decoration:none; 
+    padding:12px 25px; 
+    border-radius:30px; 
+    transition:background-color 0.3s;
+  " onmouseover="this.style.backgroundColor='#1e7e34'" onmouseout="this.style.backgroundColor='#28a745'">
+    Contact Us for Collaboration
+  </a>
+</section>
+
+<!-- PROJECTS GRID SECTION -->
+<section style="
+  background: linear-gradient(135deg, #e0f7fa, #c8e6c9);
+  padding:80px 20px;
+  text-align:center;
+">
+  <h2 style="font-size:40px; color:#00695c; margin-bottom:10px; letter-spacing:1px;">My Latest Projects</h2>
+  <p style="max-width:650px; margin:auto; color:#2e7d32; line-height:1.6; margin-bottom:50px;">
+    Explore some of the creative and high-performance projects I've built — from professional business websites to engaging online stores and personal portfolios.
+  </p>
+
+  <!-- Flex container for projects -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+
+    <!-- Project 1 -->
+    <div style="background-color:#e3f2fd; width:300px; border-radius:20px; box-shadow:0 6px 12px rgba(0,0,0,0.15); overflow:hidden; transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" 
+         onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/web.jpg" 
+           alt="Business website project" 
+           loading="lazy" 
+           style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#1565c0; margin-bottom:10px;">Corporate Website</h3>
+        <p style="color:#444; line-height:1.5;">A professional business website built with HTML, CSS, and JavaScript, optimized for fast performance and SEO.</p>
+        <a href="#" style="display:inline-block; margin-top:15px; background-color:#1565c0; color:white; text-decoration:none; padding:8px 18px; border-radius:20px;"
+           onmouseover="this.style.backgroundColor='#0d47a1'" 
+           onmouseout="this.style.backgroundColor='#1565c0'">View More</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div style="background-color:#fff3e0; width:300px; border-radius:20px; box-shadow:0 6px 12px rgba(0,0,0,0.15); overflow:hidden; transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" 
+         onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/web1.jpg" 
+           alt="E-commerce website project" 
+           loading="lazy" 
+           style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#ef6c00; margin-bottom:10px;">E-commerce Store</h3>
+        <p style="color:#444; line-height:1.5;">An online clothing store built with clean UI and easy navigation to improve shopping experience and speed.</p>
+        <a href="#" style="display:inline-block; margin-top:15px; background-color:#ef6c00; color:white; text-decoration:none; padding:8px 18px; border-radius:20px;"
+           onmouseover="this.style.backgroundColor='#e65100'" 
+           onmouseout="this.style.backgroundColor='#ef6c00'">View More</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div style="background-color:#fce4ec; width:300px; border-radius:20px; box-shadow:0 6px 12px rgba(0,0,0,0.15); overflow:hidden; transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" 
+         onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/web2.jpg" 
+           alt="Portfolio website project" 
+           loading="lazy" 
+           style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#c2185b; margin-bottom:10px;">Portfolio Website</h3>
+        <p style="color:#444; line-height:1.5;">A personal portfolio built to showcase skills, work, and achievements in a beautiful modern design.</p>
+        <a href="#" style="display:inline-block; margin-top:15px; background-color:#c2185b; color:white; text-decoration:none; padding:8px 18px; border-radius:20px;"
+           onmouseover="this.style.backgroundColor='#880e4f'" 
+           onmouseout="this.style.backgroundColor='#c2185b'">View More</a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div style="background-color:#f3e5f5; width:300px; border-radius:20px; box-shadow:0 6px 12px rgba(0,0,0,0.15); overflow:hidden; transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" 
+         onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/web4.jpg" 
+           alt="Education website project" 
+           loading="lazy" 
+           style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#6a1b9a; margin-bottom:10px;">Education Platform</h3>
+        <p style="color:#444; line-height:1.5;">An online learning website designed for students to explore digital courses with an easy-to-use interface.</p>
+        <a href="#" style="display:inline-block; margin-top:15px; background-color:#6a1b9a; color:white; text-decoration:none; padding:8px 18px; border-radius:20px;"
+           onmouseover="this.style.backgroundColor='#4a148c'" 
+           onmouseout="this.style.backgroundColor='#6a1b9a'">View More</a>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div style="background-color:#fff8e1; width:300px; border-radius:20px; box-shadow:0 6px 12px rgba(0,0,0,0.15); overflow:hidden; transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" 
+         onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/web5.jpg" 
+           alt="Restaurant website project" 
+           loading="lazy" 
+           style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#f57f17; margin-bottom:10px;">Restaurant Website</h3>
+        <p style="color:#444; line-height:1.5;">A restaurant and food delivery site that highlights dishes and makes online ordering quick and attractive.</p>
+        <a href="#" style="display:inline-block; margin-top:15px; background-color:#f57f17; color:white; text-decoration:none; padding:8px 18px; border-radius:20px;"
+           onmouseover="this.style.backgroundColor='#e65100'" 
+           onmouseout="this.style.backgroundColor='#f57f17'">View More</a>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div style="background-color:#e8f5e9; width:300px; border-radius:20px; box-shadow:0 6px 12px rgba(0,0,0,0.15); overflow:hidden; transition:transform 0.3s;"
+         onmouseover="this.style.transform='translateY(-10px)'" 
+         onmouseout="this.style.transform='translateY(0)'">
+      <img src="imgs/web6.jpg" 
+           alt="Travel website project" 
+           loading="lazy" 
+           style="width:100%; height:180px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#2e7d32; margin-bottom:10px;">Travel Blog</h3>
+        <p style="color:#444; line-height:1.5;">A vibrant travel blog showcasing adventures, tips, and experiences with interactive galleries and maps.</p>
+        <a href="#" style="display:inline-block; margin-top:15px; background-color:#2e7d32; color:white; text-decoration:none; padding:8px 18px; border-radius:20px;"
+           onmouseover="this.style.backgroundColor='#1b5e20'" 
+           onmouseout="this.style.backgroundColor='#2e7d32'">View More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+      <!-- my contant-->
+        
+
+<section style="background-color:#dcedc8; padding:100px 20px; text-align:center;">
+
+  <!-- Section Heading -->
+  <h2 style="font-size:36px; color:#1b5e20; margin-bottom:50px;">Get in Touch</h2>
+
+  <!-- Flex container for circles -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:50px;">
+
+    <!-- Circle 1: Contact Info -->
+    <div style="background-color:#28a745; color:white; width:300px; height:300px; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+      <h3 style="margin-bottom:15px;">Contact Info</h3>
+      <p style="margin:5px 0;"><strong>Phone:</strong> +1 437-259-1521</p>
+      <p style="margin:5px 0;"><strong>Email:</strong> mpagiclive60@gmail.com</p>
+      <p style="margin:5px 0;"><strong>Location:</strong> Downtown Toronto</p>
+    </div>
+
+    <!-- Circle 2: Image + Text -->
+    <div style="background-color:#81c784; color:white; width:300px; height:300px; border-radius:50%; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+       <img src="https://images.pexels.com/photos/5997189/pexels-photo-5997189.jpeg" alt="Support team answering calls" loading="lazy" style="border-radius:50%; margin-bottom:15px; width:80px; height:80px; object-fit:cover;">
+      <p style="line-height:1.5; font-weight:bold;">
+        Call us today and I help bring your digital vision to life!  
+        Fast, friendly, and professional support awaits.
+      </p>
+    </div>
+
+  </div>
+    </main>
+
+    <!-- FOOTER -->
+  <footer>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div style="margin:15px 0;">
+      <a href="https://facebook.com"> Facebook</a>
+      <a href="https://twitter.com"> Twitter</a>
+      <a href="https://instagram.com"> Instagram</a>
+      <a href="https://linkedin.com"> LinkedIn</a>
+    </div>
+    <p style="font-size:13px; color:#aaa;">© 2025 UCANDEV. All rights reserved.</p>
+  </footer>
+     <!-- JAVASCRIPT FOR HAMBURGER MENU -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when link clicked (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+  </body>
+</html>
